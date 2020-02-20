@@ -40,16 +40,25 @@ Freescale/NXP I.MX Chip image deploy tools.
                             
   uuu -b emmc u-boot.imx    write u-boot.imx to emmc boot partition. u-boot.imx need enable fastboot
   
+  
   uuu -b emmc_all u-boot.imx sdcard.bz2\*
                             decompress sdcard.bz2 file and download the whole image into emmc
   
-  uuu -lsusb                check your usb device 
   
-
+  uuu -lsusb                check your usb device on host (device : HID)
+  
+  
   uuu -bshow emmc_all u-boot.imx sdcard.bz2/*
-                              analyze your command so you can make new scripts
-                    
-  uuu FB: ucmd saveenv        control u-boot command
+                             analyze your this commands so you can make your new command lists you want 
+                             
+                             refer to pdf file 
+                             
+  
+  uuu FB: ucmd saveenv       control u-boot command on host ( e.g saveenv )
+                             
+                             send this u-boot command into u-boot on i.MX device so control u-boot commands on i.MX
+                             
+                             refer to pdf file 
   
 ```
 
