@@ -42,6 +42,15 @@ Freescale/NXP I.MX Chip image deploy tools.
   
   uuu -b emmc_all u-boot.imx sdcard.bz2\*
                             decompress sdcard.bz2 file and download the whole image into emmc
+  
+  uuu -lsusb                check your usb device 
+  
+
+  uuu -bshow emmc_all u-boot.imx sdcard.bz2/*
+                              analyze your command so you can make new scripts
+                    
+  uuu FB: ucmd saveenv        control u-boot command
+  
 ```
 
 # Prebuilt Image and pdf document
